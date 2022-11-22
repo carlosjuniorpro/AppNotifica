@@ -20,7 +20,7 @@ class RegisterView: UIView {
     
     
     // cria a função com as propriedades da label no login
-    var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar")
+    var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar", font: UIFont.systemFont(ofSize: 27, weight: .regular))
   
    // cria a função com as propriedades da textfield email do registro
     var emailTextField = TextFieldDefault (placeholder: "E-mail")
@@ -60,7 +60,7 @@ class RegisterView: UIView {
             
             imageLabel.widthAnchor.constraint(equalToConstant: 374),
             imageLabel.heightAnchor.constraint(equalToConstant: 60),
-            imageLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 228),
+            imageLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 200),
             imageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
             imageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             

@@ -19,6 +19,8 @@ class LabelDefault : UILabel{
         self.text = text
         self.textColor = .textLabelColor
         self.font = font
+        self.adjustsFontSizeToFitWidth = true
+        self.numberOfLines = 0
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     
