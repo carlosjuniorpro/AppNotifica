@@ -21,7 +21,7 @@ class LoginView: UIView {
     
     
     // cria a função com as propriedades da label no login
-    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF")
+    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", font: UIFont(name: "SFProDisplay-Light", size: 17)!)
     //var imageLabel: UILabel = {
     //    let label = UILabel()
     //    label.textColor = .textLabelColor
