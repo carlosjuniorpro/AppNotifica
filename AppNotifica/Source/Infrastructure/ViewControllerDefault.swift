@@ -14,7 +14,9 @@ class ViewControllerDefault: ViewController {
     // É executado quando está carregando
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Aumenta o tamanho do texto e do título
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        //faz desaparecer o link voltar no lado superior esquerdo da tela
         self.navigationItem.setHidesBackButton(true, animated: false)
     }
 }

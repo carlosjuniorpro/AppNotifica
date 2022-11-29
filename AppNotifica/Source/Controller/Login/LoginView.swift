@@ -102,7 +102,7 @@ class LoginView: UIView {
         buttonRegistrar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
         
         
-        buttonLogar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
+        buttonLogar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             
