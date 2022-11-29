@@ -8,15 +8,7 @@
 import Foundation
 import UIKit
 
-class RegisterView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.backgroundColor = .viewBackGroundColor
-        
-        setupVisualElements()
-    }
-    
-    
+class RegisterView: ViewDefault {
     
     //MARK: - Clousures
     var onLoginTap:(() -> Void)?
@@ -27,14 +19,24 @@ class RegisterView: UIView {
     var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar", font: UIFont.systemFont(ofSize: 27, weight: .regular))
   
    // cria a função com as propriedades da textfield email do registro
-    var emailTextField = TextFieldDefault (placeholder: "E-mail")
+    var emailTextField = TextFieldDefault (placeholder: "E-mail", keyBoardType: .emailAddress, returnKeyType: .next)
 
     // cria a função com as propriedades da textfield senha do registro
-    var senhaTextField = TextFieldDefault (placeholder: "Senha")
-    
-    
+    var senhaTextField: TextFieldDefault = {
+        let text = TextFieldDefault (placeholder: "Senha", keyBoardType: .emailAddress, returnKeyType: .next)
+         
+         text.isSecureTextEntry = true
+         
+         return text
+     }()
     // cria a função com as propriedades da textfield confirmação de senha do Registro
-    var confirmarSenhaTextField = TextFieldDefault (placeholder: "Confirmar Senha")
+    var confirmarSenhaTextField: TextFieldDefault = {
+        let text = TextFieldDefault (placeholder: "Confirmar Senha", keyBoardType: .emailAddress, returnKeyType: .done)
+         
+         text.isSecureTextEntry = true
+         
+         return text
+     }()
     
     // cria a função com as propriedades button Registrar do registro
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
@@ -48,7 +50,12 @@ class RegisterView: UIView {
     
 
     
-    func setupVisualElements(){
+   override func setupVisualElements(){
+       
+        super.setupVisualElements()
+        emailTextField.delegate = self
+        senhaTextField.delegate = self
+        confirmarSenhaTextField.delegate = self
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
         self.addSubview(senhaTextField)
@@ -106,13 +113,32 @@ class RegisterView: UIView {
     }
     
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     //MARK: - Actions
     @objc
     private func loginTap(){
         onLoginTap?()
+    }
+}
+
+extension RegisterView: UITextFieldDelegate {
+    
+    
+    // Configura o botão seguinte do teclado
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        
+        if textField == emailTextField{
+            
+            self.senhaTextField.becomeFirstResponder()
+            
+        } else if textField == senhaTextField{
+            
+            self.confirmarSenhaTextField.becomeFirstResponder()
+            
+        } else {
+            
+            textField.resignFirstResponder()
+        }
+        
+        return true
     }
 }

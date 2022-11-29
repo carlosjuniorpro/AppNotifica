@@ -18,5 +18,14 @@ class ViewControllerDefault: ViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         //faz desaparecer o link voltar no lado superior esquerdo da tela
         self.navigationItem.setHidesBackButton(true, animated: false)
+        
+        // faz o teclado virtual desaparecer quando clica em qualquer parte da tela que não seja campo de preenchimento
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyBoardByTappinoutSide))
+        self.view.addGestureRecognizer(tap)
+        
+    }
+    @objc
+    func hideKeyBoardByTappinoutSide(){
+        self.view.endEditing(true)
     }
 }

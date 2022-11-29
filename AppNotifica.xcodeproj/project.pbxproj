@@ -33,6 +33,7 @@
 		C1968A6D292CF74800E6730C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1968A6C292CF74800E6730C /* RegisterView.swift */; };
 		C1968A6F292CF76A00E6730C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1968A6E292CF76A00E6730C /* RegisterViewController.swift */; };
 		C1968A71292CF80A00E6730C /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1968A70292CF80A00E6730C /* RegisterCoordinator.swift */; };
+		C1B569B529362FBD007E5EE0 /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B569B429362FBD007E5EE0 /* ViewDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		C1968A6C292CF74800E6730C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		C1968A6E292CF76A00E6730C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C1968A70292CF80A00E6730C /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		C1B569B429362FBD007E5EE0 /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				C10E865C29268050009B45E9 /* ButtonDefault.swift */,
 				C10E865E29268157009B45E9 /* LabelDefault.swift */,
 				C12A5275292FB75E00132594 /* ViewControllerDefault.swift */,
+				C1B569B429362FBD007E5EE0 /* ViewDefault.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				C1968A6F292CF76A00E6730C /* RegisterViewController.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
+				C1B569B529362FBD007E5EE0 /* ViewDefault.swift in Sources */,
 				C15AD2C4291A8DA400E30175 /* LoginViewController.swift in Sources */,
 				C15AD2BD291A89BC00E30175 /* Coordinator.swift in Sources */,
 				C10E865D29268050009B45E9 /* ButtonDefault.swift in Sources */,
