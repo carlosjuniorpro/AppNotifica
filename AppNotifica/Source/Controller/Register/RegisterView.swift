@@ -18,7 +18,7 @@ class RegisterView: UIView {
     
     
     
-    //MARK: - Initialize
+    //MARK: - Clousures
     var onLoginTap:(() -> Void)?
     
     

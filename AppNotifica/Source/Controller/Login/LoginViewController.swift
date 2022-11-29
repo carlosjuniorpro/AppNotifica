@@ -8,16 +8,22 @@
 import Foundation
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: ViewControllerDefault {
     
     //MARK: - Closures
     var onRegisterTap: (() -> Void)?
+    var onLoginTap: (() -> Void)?
     
     //criar uma variável do tipo LoginView
     lazy var loginView: LoginView = {
         let loginView = LoginView()
         loginView.onRegisterTap = {
             self.onRegisterTap?()
+        }
+        
+    
+        loginView.onLoginTap = {
+            self.onLoginTap?()
         }
         return loginView
     }()
