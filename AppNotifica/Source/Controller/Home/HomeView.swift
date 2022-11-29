@@ -8,21 +8,13 @@
 import Foundation
 import UIKit
 
-class HomeView: UIView {
+class HomeView: ViewDefault {
     //MARK: - Closures
     
-    override init(frame: CGRect){
-        super.init(frame: frame)
-        setupVisualElements()
-        self.backgroundColor = .viewBackGroundColor
-    }
+  
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setupVisualElements() {
-       // setupVisualElements()
+    override func setupVisualElements() {
+        super.setupVisualElements()
     }
     
     
