@@ -42,6 +42,7 @@
 		C1B569C4293650E3007E5EE0 /* SobreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B569C3293650E3007E5EE0 /* SobreCoordinator.swift */; };
 		C1B569C629365115007E5EE0 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B569C529365115007E5EE0 /* TabBarCoordinator.swift */; };
 		C1B569C829365148007E5EE0 /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B569C729365148007E5EE0 /* NovaOcorrenciaCoordinator.swift */; };
+		C1D0CF79293F7BE70027F7F8 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0CF78293F7BE70027F7F8 /* EscolherImagem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		C1B569C3293650E3007E5EE0 /* SobreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreCoordinator.swift; sourceTree = "<group>"; };
 		C1B569C529365115007E5EE0 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		C1B569C729365148007E5EE0 /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
+		C1D0CF78293F7BE70027F7F8 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 			children = (
 				C1B569BD29364F9B007E5EE0 /* NovaOcorrenciaView.swift */,
 				C1B569BF29364FFB007E5EE0 /* NovaOcorrenciaViewController.swift */,
+				C1D0CF78293F7BE70027F7F8 /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				C1B569BC29364F45007E5EE0 /* SobreView.swift in Sources */,
 				C1B569BA29364EE6007E5EE0 /* TabBarController.swift in Sources */,
 				C1B569C4293650E3007E5EE0 /* SobreCoordinator.swift in Sources */,
+				C1D0CF79293F7BE70027F7F8 /* EscolherImagem.swift in Sources */,
 				C12A5276292FB75E00132594 /* ViewControllerDefault.swift in Sources */,
 				C10E8659292675C6009B45E9 /* ImageDefault.swift in Sources */,
 				C1968A6D292CF74800E6730C /* RegisterView.swift in Sources */,
